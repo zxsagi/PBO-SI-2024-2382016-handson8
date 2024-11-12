@@ -2,24 +2,24 @@ package entities;
 
 public class TodoList {
     private String todo;
-    private int id;
+    private Integer id;
 
     public TodoList() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getTodo() {
         return todo;
     }
 
-    public void setTodo(String todo) {
+    public void setTodo(final String todo) {
         this.todo = todo;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(final Integer id) {
+        this.id = id;
     }
 }
